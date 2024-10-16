@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #3498db;
+    --text-color: #ecf0f1;
+    --background-color: #2c3e50;
+    --secondary-color: #34495e;
+    --subtle-color: rgba(236, 240, 241, 0.7);
+}
+body {
+    font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(44, 62, 80, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 15px 0;
+    z-index: 1000;
+}
+nav .nav-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.back-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.back-link:hover {
+    color: var(--text-color);
+}
+article {
+    margin-top: 80px;
+}
+.essay-header {
+    margin-bottom: 60px;
+}
+
+.intro-par {
+    /* font-weight: 600; */
+    font-style: italic;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+.essay-meta {
+    color: var(--subtle-color);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.essay-content {
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+.essay-content p {
+    margin-bottom: 30px;
+}
+.essay-content h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 60px 0 30px 0;
+}
+.essay-content h3 {
+    color: var(--primary-color);
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 40px 0 20px 0;
+}
+blockquote {
+    border-left: 3px solid var(--primary-color);
+    margin: 40px 0;
+    padding-left: 20px;
+    font-style: italic;
+    color: var(--subtle-color);
+}
+hr {
+    border: none;
+    border-top: 1px solid rgba(236, 240, 241, 0.1);
+    margin: 40px 0;
+}
+footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(236, 240, 241, 0.1);
+    color: var(--subtle-color);
+    font-size: 0.9em;
+}
+code {
+    background: rgba(52, 73, 94, 0.5);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+pre {
+    background: rgba(52, 73, 94, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+pre code {
+    background: none;
+    padding: 0;
+}
